@@ -1,0 +1,15 @@
+>pip install alembic
+>alembic init alembic
+Open 'alembic.ini' file update sqlalchemy.url by your database
+To create alembic version:
+  >alembic revision -m "create table"
+To upgrate alembic version as latest or specific version
+  >alembic upgrade head (for latest alembic version)
+  >alembic upgrade <alembic version>
+To downgrade alembic version
+  >alembic downgrade -1 (for downgrade to previous alembic version)
+  >alembic downgrade <alembic version>
+ To check current alembic version
+  >alembic current
+To check History
+  >alembic history
